@@ -36,21 +36,7 @@ if (!($grana>0)) { // caso retorne verdadeiro
 //estrutura de repetição
 
 // funções e configurações
-if(isset($_GET['enviar'])){
-$nome = $_GET['txt-nome'];
-$email = $_GET['txt-email'];
-$data_nasc = $_GET['txt-data-nasc'];
-$dataT = new Datetime($data_nasc);
-$data_nasc = date_format($dataT,'d-M-Y');
 
-$aluno =array('nome'=>$nome,'email'=>$email, 'datan'=>$data_nasc);
-
-foreach($aluno as $key => $value){
-    echo('<h2>'.$key.': '. $value.'</h2>');
-}
-0
-// echo('<h1>'.$valor.'</h1>');
-}
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +48,7 @@ foreach($aluno as $key => $value){
     <title>Document</title>
 </head>
 <body>
-    <form action="#" method="get">
+    <form action="opform.php" method="post" name="frm-aluno">
         <label for="txt-nome">
             nome:
             <input type="text" name="txt-nome" placeholder="digite o nome..." required>
