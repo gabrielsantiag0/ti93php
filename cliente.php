@@ -84,7 +84,7 @@ if(isset($_POST['bt-enviar']))
                 ?>
             </td>
         </tr>
-<?php } while ($row = $lista->fetch()) ?>
+<?php } while($row = $lista->fetch()) ?>
 </tbody>
 </table>
 </body>

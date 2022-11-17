@@ -21,7 +21,7 @@ if(isset($_POST['bt-enviar']))
     $VR = $_POST['VR'];
     $VA = $_POST['VA'];
     $inserSql = "insert funcionario (nome, cpf,cargo,escala,turno,Admissão,salario,VT,VR,VA) values('$nome','$cpf','$cargo','$escala','$turno',$admissao','$salario','$VT','$VR','$VA')";
-    $resltado = $conn->query($inserSql);
+    $resultado = $conn->query($consultasgl);
     header('location: funcionario.php');
 
 }
@@ -72,16 +72,16 @@ if(isset($_POST['bt-enviar']))
                 <input type="number" name="Salario" id=""></label>
         </div>
         <div class="campo">
-            <label for="VT">VT
-                <input type="text" name="VT" id=""></label>
+            <label for="VT">vt
+                <input type="text" name="vt" id=""></label>
         </div>
         <div class="campo">
-            <label for="VR">VR
-                <input type="text" name="VR" id=""></label>
+            <label for="VR">vr
+                <input type="text" name="vr" id=""></label>
         </div>
         <div class="campo">
-            <label for="VA">VA
-                <input type="text" name="VA" id=""></label>
+            <label for="VA">va
+                <input type="text" name="va" id=""></label>
         </div>
         <div>
             <button type="submit" name="bt-enviar">Enviar</button>
@@ -119,7 +119,7 @@ if(isset($_POST['bt-enviar']))
              <tbody>
                 <?php do {?>
                     <tr>
- <td><?php echo $row['cod_func']?></td>
+ <td><?php echo $row['cod']?></td>
 
 <td><?php echo $row['nome']?></td>
 
