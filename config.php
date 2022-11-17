@@ -1,20 +1,23 @@
-<?php 
- // definindo timezone
+<?php
 
- date_default_timezone_set('America/Sao_Paulo');
+    // definindo timezone
 
+    date_default_timezone_set('America/Sao_Paulo');
 
+    //constantes (de banco de dados)
 
- //constantes (de banco de dados)
-//Enumerrador
- const DATABASE = 'ti93db01';
+    //Constantes (de Banco de dados)
 
- const SERVER_DB = '127.0.0.1';
+    //Enumerator - -
 
- const USER_DB = 'root';
+    const DATABASE = 'db_Locadora_93';
 
- const PASSWORD_DB = '';
+    const SERVER_DB = '127.0.0.1';
 
- const PORT_DB = '3306';
+    const USER_DB = 'root';
+
+    const PASSWORD_DB = '';
+
+    const PORT_DB = '3306';
 
 ?>
