@@ -119,8 +119,6 @@ if(isset($_POST['bt-enviar']))
              <tbody>
                 <?php do {?>
                     <tr>
- <td><?php echo $row['cod']?></td>
-
 <td><?php echo $row['nome']?></td>
 
 <td><?php echo $row['cpf']?></td>
