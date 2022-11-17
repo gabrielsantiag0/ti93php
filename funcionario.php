@@ -119,25 +119,25 @@ if(isset($_POST['bt-enviar']))
              <tbody>
                 <?php do {?>
                     <tr>
-<td><?php echo $row['nome']?></td>
+<td><?php echo $row['nome'];?></td>
 
-<td><?php echo $row['cpf']?></td>
+<td><?php echo $row['cpf'];?></td>
 
-<td><?php echo $row['cargo']?></td>
+<td><?php echo $row['cargo'];?></td>
 
-<td><?php echo $row['escala']?></td>
+<td><?php echo $row['escala'];?></td>
 
-<td><?php echo $row['turno']?></td>
+<td><?php echo $row['turno'];?></td>
 
-<td><?php echo $row['admissao']?></td>
+<td><?php echo $row['admissao'];?></td>
 
-<td><?php echo $row['salario']?></td>
+<td><?php echo $row['salario'];?></td>
 
-<td><?php echo $row['vt']?></td>
+<td><?php echo $row['vt'];?></td>
 
-<td><?php echo $row['vr']?></td>
+<td><?php echo $row['vr'];?></td>
 
-<td><?php echo $row['va']?></td>
+<td><?php echo $row['va'];?></td>
 </tr>
 <?php } while($row = $funcionario->fetch())?>
              </tbody>
